@@ -7,6 +7,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
+    "console": "nest start --watch --entryFile repl",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
@@ -46,7 +47,7 @@
     "supertest": "^6.1.3",
     "ts-jest": "29.1.0",
     "ts-loader": "^9.2.3",
-    "ts-node": "^10.0.0",
+    "ts-node": "^10.9.1",
     "tsconfig-paths": "4.2.0",
     "typescript": "^5.0.0"
   },
