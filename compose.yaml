@@ -4,8 +4,9 @@ services:
     user: node
     working_dir: /home/node/app
     environment:
-      NODE_ENV: dev
+      API_DOCUMENT_DIR: ./docs/api
       DATABASE_URL: mysql://${DATABASE_USER}@db:3306/${DATABASE_NAME}?schema=public
+      NODE_ENV: dev
     volumes:
       - .:/home/node/app
     ports:
