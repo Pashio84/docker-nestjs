@@ -11,6 +11,13 @@ paths:
             application/json:
               schema:
                 type: string
+  /mail:
+    get:
+      operationId: MailController_sendMailTest
+      parameters: []
+      responses:
+        '202':
+          description: ''
 info:
   title: Cats example
   description: The cats API description

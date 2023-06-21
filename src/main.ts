@@ -5,6 +5,8 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { dump } from 'js-yaml';
 import { join } from 'path';
 
+const API_DOCUMENT_DIR = './docs/api';
+
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
@@ -16,9 +18,9 @@ async function bootstrap() {
     .addTag('cats')
     .build();
   const document = SwaggerModule.createDocument(app, config);
-  process.env.API_DOCUMENT_DIR !== undefined &&
+  API_DOCUMENT_DIR !== undefined &&
     fs.writeFileSync(
-      join(process.env.API_DOCUMENT_DIR, 'swagger.yaml'),
+      join(API_DOCUMENT_DIR, 'swagger.yaml'),
       dump(document, {}),
     );
   SwaggerModule.setup('api', app, document); // Enable `/api` and `/api-json` path for Swagger UI

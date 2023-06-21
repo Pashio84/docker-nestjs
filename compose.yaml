@@ -3,10 +3,7 @@ services:
     image: node:18.16.0-alpine
     user: node
     working_dir: /home/node/app
-    environment:
-      API_DOCUMENT_DIR: ./docs/api
-      DATABASE_URL: mysql://${DATABASE_USER}@db:3306/${DATABASE_NAME}?schema=public
-      NODE_ENV: dev
+    env_file: .env
     volumes:
       - .:/home/node/app
     ports:

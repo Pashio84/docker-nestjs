@@ -3,6 +3,7 @@
   "collection": "@nestjs/schematics",
   "sourceRoot": "src",
   "compilerOptions": {
+    "assets": ["*/templates/**/*.hbs"],
     "deleteOutDir": true,
     "plugins": [
       {
@@ -11,6 +12,7 @@
           "introspectComments": true
         }
       }
-    ]
+    ],
+    "watchAssets": true
   }
 }
