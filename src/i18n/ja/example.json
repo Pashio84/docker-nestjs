@@ -1,0 +1,22 @@
+{
+  "HELLO": "こんにちは",
+  "PRODUCT": {
+    "NEW": "新しい商品：{name}"
+  },
+  "ENGLISH": "英語",
+  "ARRAY": ["いち", "に", "さん"],
+  "cat": "猫",
+  "cat_name": "猫の名前：{name}",
+  "set-up-password": {
+    "heading": "こんにちは、{username}",
+    "title": "パスワードを忘れた場合",
+    "followLink": "リンクをクリックしてパスワードを設定してください"
+  },
+  "day_interval": {
+    "one": "毎日",
+    "other": "{count}日ごと",
+    "zero": "滅多にない"
+  },
+  "nested": "買い物に行く頻度：$t(example.day_interval, {{\"count\": {count} }})"
+}
+
