@@ -82,5 +82,9 @@
     "hooks": {
       "pre-commit": "pre-commit"
     }
+  },
+  "volta": {
+    "node": "18.16.0",
+    "npm": "9.7.2"
   }
 }
